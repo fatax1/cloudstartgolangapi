@@ -5,9 +5,8 @@ import (
 	"net/http"
 	"time"
 
-	"cloudgolangapi/data"
-
 	"github.com/gin-gonic/gin"
+	"systementor.se/cloudgolangapi/data"
 )
 
 var config Config
@@ -63,7 +62,7 @@ func apiPlay(c *gin.Context) {
 	}
 
 	// Spara spelet i databasen
-	err := data.SaveGame(yourSelection, mySelection, winner)
+	err := data.SaveGame(yourSelection, mySelection, winner) // Rätt anrop, utan att använda värde
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to save the game"})
 		return
