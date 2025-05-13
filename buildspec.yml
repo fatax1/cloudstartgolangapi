@@ -3,7 +3,7 @@ version: 0.2
 phases:
   build:
     commands:
-      - docker build -t git.systementor.se/abdilfatax/stexsax525 .
+      - docker build -t git.systementor.se/abdilfatax/stensax525 .
       - docker login -u abdilfatax -p Tc192291 https://git.systementor.se/abdilfatax
-      - docker push git.systementor.se/abdilfatax/stexsax525
+      - docker push git.systementor.se/abdilfatax/stensax525
        
