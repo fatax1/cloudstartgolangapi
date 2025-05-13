@@ -5,5 +5,5 @@ phases:
     commands:
       - docker build -t git.systementor.se/abdilfatax/stensax424 .
       - docker login -u abdilfatax -p Tc192291 https://git.systementor.se/abdilfatax
-      - docker push git.systementor.se/yacloud/stensax424
+      - docker push git.systementor.se/abdilfatax/stensax424
        
